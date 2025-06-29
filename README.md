@@ -124,4 +124,81 @@ Integrate with hospitals and diagnostic centers
 
 
 ---
+📋 Stages of the Project
 
+1. Data Collection and Preprocessing
+
+
+2. Feature Selection and Normalization
+
+
+3. Training Random Forest Classifier
+
+
+4. Saving the Model and Normalizer as .pkl files
+
+
+5. Front-End Interface (optional: Streamlit)
+
+
+6. Integration and Prediction Flow
+
+
+
+
+---
+
+📂 Dataset
+
+Source: Indian Liver Patient Dataset (ILPD)
+
+Total Records: 583 patients
+
+Attributes: Age, Gender, Total Bilirubin, Direct Bilirubin, Alkaline Phosphotase, etc.
+
+Stored in:
+/data/indian_liver_patient.csv
+
+
+Example class mapping:
+
+{ "low risk": 0, "high risk": 1 }
+----
+🧪 Technologies Used
+
+Python
+
+Scikit-learn (Random Forest)
+
+Pandas, NumPy
+
+Google Colab (for training)
+
+Flask / Streamlit (optional frontend)
+
+GitHub
+
+
+
+---
+
+📊 Model Performance
+
+✅ Accuracy: 100% on training data
+
+⚠️ Requires external validation for clinical deployment
+
+🔍 Model used: RandomForestClassifier from sklearn
+
+💾 Saved files: liver_model.pkl, normalizer.pkl
+---
+🎯 Context
+
+Liver Cirrhosis is a chronic condition that can go undiagnosed in early stages.
+This project helps solve the problem by:
+
+Automating prediction using biochemical attributes
+
+Providing early warnings for liver health risks
+
+Assisting doctors and health workers with decision-making
